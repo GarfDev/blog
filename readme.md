@@ -15,13 +15,13 @@ Open your terminal and type in
 
 ```sh
 $ git clone https://github.com/GarfDev/abstractionless-react-boilerplate.git
-$ cd readme-boilerplate
+$ cd abstractionless-react-boilerplate
 ```
 
 ## Scaffolding
 
 ```text
-readme-boilerplate
+abstractionless-react-boilerplate
 ├── application
 │   └── index.tsx
 │
@@ -43,7 +43,7 @@ If you have questions, feature requests or a bug you want to report, please clic
 
 ## Author
 
-- [**GarfDev**](https://www.yilbermejia.com/) [![GitHub followers](https://img.shields.io/github/followers/yilber.svg?style=social)](https://github.com/GarfDev)
+- [**GarfDev**](https://www.garfdev.space/) [![GitHub followers](https://img.shields.io/github/followers/yilber.svg?style=social)](https://github.com/GarfDev)
 
 ## Support
 
