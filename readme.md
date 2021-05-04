@@ -7,7 +7,7 @@ Boilerplate for creating github compatible readme files
 
 ## Background
 
-> Creating a good README.md takes forever, especially if you are starting off from scratch. So, I decided to make a few templates to help me speed up things a little bit. The readme-template.md file is a template containing a group of sections that you might want to include on your readme file.
+> Need of having a simple, plain start instead of a fully setup project.
 
 ## Installation
 
