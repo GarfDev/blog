@@ -1,7 +1,7 @@
 # Readme Boilerplate
 
-[![GitHub version](https://img.shields.io/badge/version-v1.0.0-blue.svg)](https://github.com/GarfDev/abstractionless-react-boilerplate)
-[![License](https://img.shields.io/github/license/yilber/readme-boilerplate.svg)](https://github.com/GarfDev/abstractionless-react-boilerplate/blob/main/LICENSE)
+[![GitHub version](https://img.shields.io/badge/version-v1.0.0-blue.svg)](https://github.com/GarfDev/abstractionless-react)
+[![License](https://img.shields.io/github/license/yilber/readme-boilerplate.svg)](https://github.com/GarfDev/abstractionless-react/blob/main/LICENSE)
 
 Boilerplate for creating github compatible readme files
 
@@ -14,7 +14,7 @@ Boilerplate for creating github compatible readme files
 Open your terminal and type in
 
 ```sh
-$ git clone https://github.com/GarfDev/abstractionless-react-boilerplate.git
+$ git clone https://github.com/GarfDev/abstractionless-react.git
 $ cd abstractionless-react-boilerplate
 ```
 
@@ -39,7 +39,7 @@ abstractionless-react-boilerplate
 
 ## Bugs
 
-If you have questions, feature requests or a bug you want to report, please click [here](https://github.com/GarfDev/abstractionless-react-boilerplate/issues) to file an issue.
+If you have questions, feature requests or a bug you want to report, please click [here](https://github.com/GarfDev/abstractionless-react/issues) to file an issue.
 
 ## Author
 
@@ -55,4 +55,4 @@ Like what you see? Keep me awake at night by buying me a coffee or two.
 
 Copyright (c) 2021 GarfDev.
 
-Usage is provided under the MIT License. See [LICENSE](https://github.com/GarfDev/abstractionless-react-boilerplate/blob/master/LICENSE) for the full details.
+Usage is provided under the MIT License. See [LICENSE](https://github.com/GarfDev/abstractionless-react/blob/master/LICENSE) for the full details.
