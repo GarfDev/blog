@@ -1,23 +1,36 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, Col } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 import { Row, Spacer } from "../@global/components";
 
 const Homepage = () => {
   return (
-    <Home fluid>
-      <Row fluid>
-        <Col />
-        <ContentCol>
-          <Name>Nguyen Gia Tuan (@GarfDev)</Name>
-          <JobTitle>Software Engineer</JobTitle>
-          <Spacer height="3mm" />
-          <JobTitle>Location: Ho Chi Minh City, Vietnam</JobTitle>
-          <JobTitle>Phone: (+84) 85 962 4268</JobTitle>
-        </ContentCol>
-        <Col />
-      </Row>
-    </Home>
+    <>
+      <Helmet>
+        <title>Nguyen Gia Tuan</title>
+      </Helmet>
+      <Home fluid>
+        <Row fluid>
+          <Col />
+          <ContentCol>
+            <Name>
+              Nguyen Gia Tuan (
+              <Link target="_blank" href="https://github.com/GarfDev">
+                @GarfDev
+              </Link>
+              )
+            </Name>
+            <JobTitle>Software Engineer</JobTitle>
+            <Spacer height="3mm" />
+            <Info>Location: Ho Chi Minh City, Vietnam</Info>
+            <Info>Email: garfdev.13@gmail.com</Info>
+            <Info>Phone: (+84) 85 962 4268</Info>
+          </ContentCol>
+          <Col />
+        </Row>
+      </Home>
+    </> 
   );
 };
 
@@ -41,6 +54,16 @@ const Name = styled.span`
 `;
 
 const JobTitle = styled(Name)`
+  color: darkgrey;
+  font-size: 0.8rem;
+`;
+
+const Info = styled(Name)`
   font-weight: normal;
   font-size: 0.8rem;
+`;
+
+const Link = styled.a`
+  color: black;
+  text-decoration: none;
 `;
