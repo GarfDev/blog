@@ -1,13 +1,22 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { Base } from "./global/styles";
+import { Base } from "./@global/styles";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-const rootNote = document.getElementById("root");
+// Import Internal Features
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Homepage from "./homepage";
 
-ReactDOM.render(
-  <div>
-    Hello
-    <Base />
-  </div>,
-  rootNote
-);
+const Application = () => {
+  return (
+    <>
+      <Router>
+        <Switch>
+          <Route path="/" component={Homepage} />
+        </Switch>
+      </Router>
+      <Base />
+    </>
+  );
+};
+
+export default Application;
