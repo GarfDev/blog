@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel ./public/index.html",
-    "build": "parcel build ./public/index.html"
+    "build": "parcel build ./public/index.html --no-source-maps && cp ./public/_redirects ./dist/_redirects"
   },
   "dependencies": {
     "bootstrap": "^5.0.1",
