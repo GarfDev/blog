@@ -1,14 +1,17 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { AnimatePresence } from "framer-motion";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 import { Base } from "./@global/styles";
 // CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Import Internal Features
-import Homepage from "./homepage";
+import Homepage from "./modules/homepage";
+import Projects from "./modules/projects";
 
 const Application = () => {
+  const location = useLocation();
+
   return (
     <>
       <Helmet>
@@ -17,13 +20,12 @@ const Application = () => {
         <meta property="og:title" content="Nguyen Gia Tuan Personal Space" />
       </Helmet>
       <AnimatePresence>
-        <Router>
-          <Switch>
-            <Route path="/" component={Homepage} />
-          </Switch>
-        </Router>
-        <Base />
+        <Switch location={location} key={location.pathname}>
+          <Route path="/experiments" component={Projects} />
+          <Route path="/" component={Homepage} />
+        </Switch>
       </AnimatePresence>
+      <Base />
     </>
   );
 };

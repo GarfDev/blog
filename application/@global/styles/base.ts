@@ -9,6 +9,7 @@ const Base = createGlobalStyle`
         font-size: min(max(1rem, 4vw), 22px);
         text-rendering: optimizeLegibility;
         box-sizing: border-box;
+        overflow: hidden;
     }
     
 
