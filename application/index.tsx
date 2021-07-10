@@ -1,7 +1,8 @@
 import React from "react";
-import { Base } from "./@global/styles";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { AnimatePresence } from "framer-motion";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Base } from "./@global/styles";
 // CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Import Internal Features
@@ -15,12 +16,14 @@ const Application = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Nguyen Gia Tuan Personal Space" />
       </Helmet>
-      <Router>
-        <Switch>
-          <Route path="/" component={Homepage} />
-        </Switch>
-      </Router>
-      <Base />
+      <AnimatePresence>
+        <Router>
+          <Switch>
+            <Route path="/" component={Homepage} />
+          </Switch>
+        </Router>
+        <Base />
+      </AnimatePresence>
     </>
   );
 };
