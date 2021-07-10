@@ -21,7 +21,7 @@ const Application = () => {
       </Helmet>
       <AnimatePresence>
         <Switch location={location} key={location.pathname}>
-          <Route path="/experiments" component={Projects} />
+          <Route path="/explore" component={Projects} />
           <Route path="/" component={Homepage} />
         </Switch>
       </AnimatePresence>

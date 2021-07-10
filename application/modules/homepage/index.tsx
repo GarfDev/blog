@@ -34,7 +34,11 @@ const Homepage = () => {
               <Info>Location: Ho Chi Minh City, Vietnam</Info>
               <Info>Email: garfdev.13@gmail.com</Info>
               <Info>Phone: (+84) 85 962 4268</Info>
-              <HiddenInfo to="/experiments">Experiments</HiddenInfo>
+              <HiddenInfo>
+                <SecretLink to="/programming">Programming with me</SecretLink>
+                <BottomLink to="/thoughts">Thoughts</BottomLink>
+                <BottomLink to="/explore">Explore</BottomLink>
+              </HiddenInfo>
             </ContentCol>
             <Col />
           </Row>
@@ -68,20 +72,32 @@ const Info = styled(Name)`
   font-size: 0.8rem;
 `;
 
-const HiddenInfo = styled(RouterLink)`
+const HiddenInfo = styled.div`
   right: 0;
   bottom: 0;
+  position: absolute;
+  transform: translate(0px, -10px);
+  transition-duration: 500ms;
+`;
+
+const BottomLink = styled(RouterLink)`
   cursor: pointer;
   font-weight: 500;
-  position: absolute;
-  transform: translate(-30%, -50%);
-  transition-duration: 500ms;
+  margin-right: 15px;
   text-decoration: none;
   user-select: none;
   font-size: 0.8rem;
   color: black;
   &:hover {
     color: #135fec;
+  }
+`;
+
+const SecretLink = styled(BottomLink)`
+  color: white;
+  margin-right: 150px;
+  &:hover {
+    color: white;
   }
 `;
 
