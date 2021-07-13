@@ -1,7 +1,6 @@
 {
   "name": "abtractionless-react-boilerplate",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Garfield is on board. <GarfDev.13@gmail.com>",
   "license": "MIT",
   "scripts": {
